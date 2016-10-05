@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы"
+                   projectFiles="true">
+      <logicalFolder name="arduino" displayName="arduino" projectFiles="true">
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Arduino.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/CDC.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Client.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial_private.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/IPAddress.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/IPAddress.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/PluggableUSB.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Print.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Print.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Printable.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Server.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Stream.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Stream.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Tone.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBAPI.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBCore.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBCore.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBDesc.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Udp.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WCharacter.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WInterrupts.c</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WMath.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WString.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WString.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/abi.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/binary.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/hooks.c</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/main.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/new.cpp</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/new.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring.c</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_analog.c</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_digital.c</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_private.h</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_pulse.S</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_pulse.c</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_shift.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="EEPROM" displayName="EEPROM" projectFiles="true">
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src/EEPROM.h</itemPath>
+        </logicalFolder>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/library.properties</itemPath>
+      </logicalFolder>
+      <logicalFolder name="HID" displayName="HID" projectFiles="true">
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src/HID.cpp</itemPath>
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src/HID.h</itemPath>
+        </logicalFolder>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/keywords.txt</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/library.properties</itemPath>
+      </logicalFolder>
+      <logicalFolder name="SoftwareSerial"
+                     displayName="SoftwareSerial"
+                     projectFiles="true">
+        <logicalFolder name="examples" displayName="examples" projectFiles="true">
+          <logicalFolder name="SoftwareSerialExample"
+                         displayName="SoftwareSerialExample"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/examples/SoftwareSerialExample/SoftwareSerialExample.ino</itemPath>
+          </logicalFolder>
+          <logicalFolder name="TwoPortReceive"
+                         displayName="TwoPortReceive"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/examples/TwoPortReceive/TwoPortReceive.ino</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.cpp</itemPath>
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.h</itemPath>
+        </logicalFolder>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/keywords.txt</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/library.properties</itemPath>
+      </logicalFolder>
+      <logicalFolder name="SPI" displayName="SPI" projectFiles="true">
+        <logicalFolder name="examples" displayName="examples" projectFiles="true">
+          <logicalFolder name="BarometricPressureSensor"
+                         displayName="BarometricPressureSensor"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/examples/BarometricPressureSensor/BarometricPressureSensor.ino</itemPath>
+          </logicalFolder>
+          <logicalFolder name="DigitalPotControl"
+                         displayName="DigitalPotControl"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/examples/DigitalPotControl/DigitalPotControl.ino</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src/SPI.cpp</itemPath>
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src/SPI.h</itemPath>
+        </logicalFolder>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/keywords.txt</itemPath>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/library.properties</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Wire" displayName="Wire" projectFiles="true">
+        <logicalFolder name="examples" displayName="examples" projectFiles="true">
+          <logicalFolder name="digital_potentiometer"
+                         displayName="digital_potentiometer"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/digital_potentiometer/digital_potentiometer.ino</itemPath>
+          </logicalFolder>
+          <logicalFolder name="master_reader"
+                         displayName="master_reader"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/master_reader/master_reader.ino</itemPath>
+          </logicalFolder>
+          <logicalFolder name="master_writer"
+                         displayName="master_writer"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/master_writer/master_writer.ino</itemPath>
+          </logicalFolder>
+          <logicalFolder name="SFRRanger_reader"
+                         displayName="SFRRanger_reader"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/SFRRanger_reader/SFRRanger_reader.ino</itemPath>
+          </logicalFolder>
+          <logicalFolder name="slave_receiver"
+                         displayName="slave_receiver"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/slave_receiver/slave_receiver.ino</itemPath>
+          </logicalFolder>
+          <logicalFolder name="slave_sender"
+                         displayName="slave_sender"
+                         projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/slave_sender/slave_sender.ino</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <logicalFolder name="utility" displayName="utility" projectFiles="true">
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility/twi.c</itemPath>
+            <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility/twi.h</itemPath>
+          </logicalFolder>
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/Wire.cpp</itemPath>
+          <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/Wire.h</itemPath>
+        </logicalFolder>
+        <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/library.properties</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+      <itemPath>/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega/pins_arduino.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM</Elem>
+    <Elem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino</Elem>
+    <Elem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID</Elem>
+    <Elem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial</Elem>
+    <Elem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI</Elem>
+    <Elem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire</Elem>
+    <Elem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>GNU_AVR|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandLine>-Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=169</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>-Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=169</commandLine>
+        </ccTool>
+        <archiverTool>
+          <commandlineTool>avr-ar</commandlineTool>
+          <ranlibTool>avr-ranlib</ranlibTool>
+        </archiverTool>
+      </compileType>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/CDC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Client.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/PluggableUSB.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Print.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Server.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Stream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Tone.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBAPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Udp.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/abi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/binary.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/hooks.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/new.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/new.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_pulse.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_pulse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src/EEPROM.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/keywords.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src/HID.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src/HID.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/examples/BarometricPressureSensor/BarometricPressureSensor.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/examples/DigitalPotControl/DigitalPotControl.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/keywords.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src/SPI.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src/SPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/examples/SoftwareSerialExample/SoftwareSerialExample.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/examples/TwoPortReceive/TwoPortReceive.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/keywords.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/SFRRanger_reader/SFRRanger_reader.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/digital_potentiometer/digital_potentiometer.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/master_reader/master_reader.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/master_writer/master_writer.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/slave_receiver/slave_receiver.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/slave_sender/slave_sender.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/Wire.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/Wire.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility/twi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility/twi.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega/pins_arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <folder path="HeaderFiles">
+        <cTool>
+          <incDir>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="SourceFiles">
+        <cTool>
+          <incDir>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/CDC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Client.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/HardwareSerial_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/PluggableUSB.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Print.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Server.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Stream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Tone.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBAPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/Udp.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/abi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/binary.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/hooks.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/new.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/new.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_pulse.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_pulse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src/EEPROM.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/keywords.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src/HID.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src/HID.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/examples/BarometricPressureSensor/BarometricPressureSensor.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/examples/DigitalPotControl/DigitalPotControl.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/keywords.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src/SPI.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src/SPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/examples/SoftwareSerialExample/SoftwareSerialExample.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/examples/TwoPortReceive/TwoPortReceive.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/keywords.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/SFRRanger_reader/SFRRanger_reader.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/digital_potentiometer/digital_potentiometer.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/master_reader/master_reader.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/master_writer/master_writer.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/slave_receiver/slave_receiver.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/examples/slave_sender/slave_sender.ino"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/library.properties"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/Wire.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/Wire.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility/twi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility/twi.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega/pins_arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
