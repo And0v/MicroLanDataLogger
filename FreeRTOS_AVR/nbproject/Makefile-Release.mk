@@ -34,7 +34,19 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/_ext/6a54406a/FreeRTOS_AVR.o \
+	${OBJECTDIR}/_ext/6a54406a/assertMsg.o \
+	${OBJECTDIR}/_ext/6a54406a/basic_io_avr.o \
+	${OBJECTDIR}/_ext/6a54406a/idlehook.o \
+	${OBJECTDIR}/_ext/61e704c7/croutine.o \
+	${OBJECTDIR}/_ext/61e704c7/event_groups.o \
+	${OBJECTDIR}/_ext/61e704c7/heap_3.o \
+	${OBJECTDIR}/_ext/61e704c7/list.o \
+	${OBJECTDIR}/_ext/61e704c7/port.o \
+	${OBJECTDIR}/_ext/61e704c7/queue.o \
+	${OBJECTDIR}/_ext/61e704c7/tasks.o \
+	${OBJECTDIR}/_ext/61e704c7/timers.o
 
 
 # C Compiler Flags
@@ -62,6 +74,66 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libfreertos_avr.a: ${OBJECTFILES}
 	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libfreertos_avr.a
 	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libfreertos_avr.a ${OBJECTFILES} 
 	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libfreertos_avr.a
+
+${OBJECTDIR}/_ext/6a54406a/FreeRTOS_AVR.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/FreeRTOS_AVR.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/6a54406a
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6a54406a/FreeRTOS_AVR.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/FreeRTOS_AVR.c
+
+${OBJECTDIR}/_ext/6a54406a/assertMsg.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/assertMsg.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/6a54406a
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6a54406a/assertMsg.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/assertMsg.cpp
+
+${OBJECTDIR}/_ext/6a54406a/basic_io_avr.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/basic_io_avr.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/6a54406a
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6a54406a/basic_io_avr.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/basic_io_avr.cpp
+
+${OBJECTDIR}/_ext/6a54406a/idlehook.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/idlehook.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/6a54406a
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6a54406a/idlehook.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/idlehook.c
+
+${OBJECTDIR}/_ext/61e704c7/croutine.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/croutine.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/croutine.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/croutine.c
+
+${OBJECTDIR}/_ext/61e704c7/event_groups.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/event_groups.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/event_groups.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/event_groups.c
+
+${OBJECTDIR}/_ext/61e704c7/heap_3.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/heap_3.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/heap_3.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/heap_3.c
+
+${OBJECTDIR}/_ext/61e704c7/list.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/list.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/list.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/list.c
+
+${OBJECTDIR}/_ext/61e704c7/port.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/port.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/port.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/port.c
+
+${OBJECTDIR}/_ext/61e704c7/queue.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/queue.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/queue.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/queue.c
+
+${OBJECTDIR}/_ext/61e704c7/tasks.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/tasks.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/tasks.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/tasks.c
+
+${OBJECTDIR}/_ext/61e704c7/timers.o: /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/timers.c 
+	${MKDIR} -p ${OBJECTDIR}/_ext/61e704c7
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/61e704c7/timers.o /media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/timers.c
 
 # Subprojects
 .build-subprojects:
