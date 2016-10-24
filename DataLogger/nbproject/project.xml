@@ -5,15 +5,17 @@
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>DataLogger</name>
             <c-extensions/>
-            <cpp-extensions>cpp,ino</cpp-extensions>
-            <header-extensions/>
+            <cpp-extensions>cpp</cpp-extensions>
+            <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects>
                 <make-dep-project>/media/Programs/NetBeansProjects/MicroLanDataLogger/FreeRTOS_AVR</make-dep-project>
                 <make-dep-project>/media/Programs/NetBeansProjects/MicroLanDataLogger/Arduino_CoreLib</make-dep-project>
                 <make-dep-project>/media/Programs/NetBeansProjects/MicroLanDataLogger/DS2480B-master</make-dep-project>
             </make-dep-projects>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>/media/Programs/arduino-1.6.11/libraries/DS2480B-master</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>Debug</name>

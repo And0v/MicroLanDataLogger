@@ -4,12 +4,14 @@
     <logicalFolder name="SourceFiles"
                    displayName="Исходные файлы"
                    projectFiles="true">
-      <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataLogger.ino</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Файлы заголовков"
                    projectFiles="true">
+      <itemPath>/media/Programs/arduino-1.6.11/libraries/DS2480B-master/DS2480B.h</itemPath>
+      <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Файлы ресурсов"
@@ -27,6 +29,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>/media/Programs/arduino-1.6.11/libraries/DS2480B-master</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -47,7 +52,6 @@
             <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src</pElem>
             <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility</pElem>
             <pElem>/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src</pElem>
-            <pElem>/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility</pElem>
             <pElem>/media/Programs/arduino-1.6.11/libraries/DS2480B-master</pElem>
           </incDir>
           <commandLine>-Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=169</commandLine>
@@ -63,8 +67,8 @@
             <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src</pElem>
             <pElem>/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility</pElem>
             <pElem>/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src</pElem>
-            <pElem>/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility</pElem>
             <pElem>/media/Programs/arduino-1.6.11/libraries/DS2480B-master</pElem>
+            <pElem>./</pElem>
           </incDir>
           <commandLine>-Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=169</commandLine>
         </ccTool>
@@ -110,8 +114,50 @@
           </linkerLibItems>
           <commandLine>-Os -Wl,--gc-sections -mmcu=atmega2560</commandLine>
         </linkerTool>
+        <requiredProjects>
+          <makeArtifact PL="/media/Programs/NetBeansProjects/MicroLanDataLogger/Arduino_CoreLib"
+                        CT="3"
+                        CN="Debug"
+                        AC="true"
+                        BL="false"
+                        WD="/media/Programs/NetBeansProjects/MicroLanDataLogger/Arduino_CoreLib"
+                        BC="${MAKE}  -f Makefile CONF=Debug"
+                        CC="${MAKE}  -f Makefile CONF=Debug clean"
+                        OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libarduino_corelib.a">
+          </makeArtifact>
+          <makeArtifact PL="/media/Programs/NetBeansProjects/MicroLanDataLogger/DS2480B-master"
+                        CT="3"
+                        CN="Debug"
+                        AC="true"
+                        BL="false"
+                        WD="/media/Programs/NetBeansProjects/MicroLanDataLogger/DS2480B-master"
+                        BC="${MAKE}  -f Makefile CONF=Debug"
+                        CC="${MAKE}  -f Makefile CONF=Debug clean"
+                        OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libds2480b-master.a">
+          </makeArtifact>
+          <makeArtifact PL="/media/Programs/NetBeansProjects/MicroLanDataLogger/FreeRTOS_AVR"
+                        CT="3"
+                        CN="Debug"
+                        AC="true"
+                        BL="false"
+                        WD="/media/Programs/NetBeansProjects/MicroLanDataLogger/FreeRTOS_AVR"
+                        BC="${MAKE}  -f Makefile CONF=Debug"
+                        CC="${MAKE}  -f Makefile CONF=Debug clean"
+                        OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libfreertos_avr.a">
+          </makeArtifact>
+        </requiredProjects>
       </compileType>
-      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataLogger.ino"
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/libraries/DS2480B-master/DS2480B.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -139,7 +185,17 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataLogger.ino"
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/arduino-1.6.11/libraries/DS2480B-master/DS2480B.h"
             ex="false"
             tool="3"
             flavor2="0">
