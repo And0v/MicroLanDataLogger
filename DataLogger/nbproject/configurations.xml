@@ -4,6 +4,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Исходные файлы"
                    projectFiles="true">
+      <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp</itemPath>
+      <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp</itemPath>
     </logicalFolder>
@@ -11,6 +13,8 @@
                    displayName="Файлы заголовков"
                    projectFiles="true">
       <itemPath>/media/Programs/arduino-1.6.11/libraries/DS2480B-master/DS2480B.h</itemPath>
+      <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.h</itemPath>
+      <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.h</itemPath>
       <itemPath>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -69,6 +73,8 @@
             <pElem>/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src</pElem>
             <pElem>/media/Programs/arduino-1.6.11/libraries/DS2480B-master</pElem>
             <pElem>./</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/libraries/SdFat/src</pElem>
+            <pElem>/media/Programs/arduino-1.6.11/libraries/Ethernet/src</pElem>
           </incDir>
           <commandLine>-Os -Wall -ffunction-sections -fdata-sections -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=169</commandLine>
         </ccTool>
@@ -147,6 +153,26 @@
           </makeArtifact>
         </requiredProjects>
       </compileType>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp"
             ex="false"
             tool="1"
@@ -185,6 +211,26 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp"
             ex="false"
             tool="1"

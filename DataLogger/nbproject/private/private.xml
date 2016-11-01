@@ -8,7 +8,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="MicroLanDataLogger">
             <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/main.cpp</file>
-            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataLogger.ino</file>
+            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.h</file>
+            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.h</file>
+            <file>file:/media/Programs/arduino-1.6.11/libraries/DS2480B-master/DS2480B.h</file>
+            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp</file>
+            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp</file>
         </group>
     </open-files>
 </project-private>

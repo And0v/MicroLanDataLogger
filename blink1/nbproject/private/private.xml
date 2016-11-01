@@ -9,8 +9,6 @@
         <group>
             <file>file:/media/Programs/NetBeansProjects/Android/blink1/main.cpp</file>
         </group>
-        <group name="MicroLanDataLogger">
-            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/blink1/main.cpp</file>
-        </group>
+        <group name="MicroLanDataLogger"/>
     </open-files>
 </project-private>

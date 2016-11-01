@@ -14,7 +14,9 @@
 #ifndef SENSORS_H
 #define SENSORS_H
 
-QueueHandle_t xQueueSensors;
+#include "FreeRTOS_AVR.h"
+
+extern QueueHandle_t xQueueSensors;
 
 typedef struct {
     byte id[8];

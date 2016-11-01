@@ -4,4 +4,11 @@
         <activeConfTypeElem>3</activeConfTypeElem>
         <activeConfIndexElem>0</activeConfIndexElem>
     </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="MicroLanDataLogger">
+            <file>file:/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/FreeRTOS_AVR.h</file>
+            <file>file:/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src/utility/task.h</file>
+        </group>
+    </open-files>
 </project-private>

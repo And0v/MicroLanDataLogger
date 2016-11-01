@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/630fbc91/DataSaver.o \
+	${OBJECTDIR}/_ext/630fbc91/UdpNtpClient.o \
 	${OBJECTDIR}/_ext/630fbc91/sensors.o \
 	${OBJECTDIR}/main.o
 
@@ -69,15 +71,25 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/datalogger: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	avr-gcc -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/datalogger ${OBJECTFILES} ${LDLIBSOPTIONS} -Os -Wl,--gc-sections -mmcu=atmega2560
 
+${OBJECTDIR}/_ext/630fbc91/DataSaver.o: /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/630fbc91
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility -I/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src -I/media/Programs/arduino-1.6.11/libraries/DS2480B-master -I./ -I/media/Programs/arduino-1.6.11/libraries/SdFat/src -I/media/Programs/arduino-1.6.11/libraries/Ethernet/src -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/630fbc91/DataSaver.o /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp
+
+${OBJECTDIR}/_ext/630fbc91/UdpNtpClient.o: /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/630fbc91
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility -I/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src -I/media/Programs/arduino-1.6.11/libraries/DS2480B-master -I./ -I/media/Programs/arduino-1.6.11/libraries/SdFat/src -I/media/Programs/arduino-1.6.11/libraries/Ethernet/src -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/630fbc91/UdpNtpClient.o /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.cpp
+
 ${OBJECTDIR}/_ext/630fbc91/sensors.o: /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/630fbc91
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility -I/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src -I/media/Programs/arduino-1.6.11/libraries/DS2480B-master -I./ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/630fbc91/sensors.o /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp
+	$(COMPILE.cc) -g -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility -I/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src -I/media/Programs/arduino-1.6.11/libraries/DS2480B-master -I./ -I/media/Programs/arduino-1.6.11/libraries/SdFat/src -I/media/Programs/arduino-1.6.11/libraries/Ethernet/src -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/630fbc91/sensors.o /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility -I/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src -I/media/Programs/arduino-1.6.11/libraries/DS2480B-master -I./ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/variants/mega -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/cores/arduino -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/EEPROM/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/HID/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SoftwareSerial/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/SPI/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src -I/media/Programs/arduino-1.6.11/hardware/arduino/avr/libraries/Wire/src/utility -I/media/Programs/arduino-1.6.11/libraries/FreeRTOS_AVR/src -I/media/Programs/arduino-1.6.11/libraries/DS2480B-master -I./ -I/media/Programs/arduino-1.6.11/libraries/SdFat/src -I/media/Programs/arduino-1.6.11/libraries/Ethernet/src -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:
