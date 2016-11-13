@@ -4,6 +4,8 @@
 //#include "sensors.h"
 #include "RTClib.h"
 #include "UdpNtpClient.h"
+#include "sensors.h"
+#include "DataSaver.h"
 
 QueueHandle_t xQueueSensors;
 
@@ -16,7 +18,10 @@ static void vTaskDateTimeSync(void *pvParameters);
 DS2480B ds(&Serial1);
 RTC_DS1307 rtc;
 UdpNtpClient ntpClient;
-const char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+DataSaver saver;
+
+
+//const char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
 static void vTaskDateTimeSync(void *pvParameters) {
     if (!rtc.begin()) {
@@ -157,18 +162,32 @@ static void vTaskMicroLanReader(void *pvParameters ) {
     } while (1);
 
 }
-/*
+
 static void vTaskDataSaver(void *pvParameters ){
-    
-    float celsius = 0.0;
-//    celsius = (float) raw / 16.0;
-    Serial.print("  Temperature = ");
-    Serial.print(celsius);
-    Serial.print(" Celsius, ");
-    
+
+    long l_index;
+    portBASE_TYPE xStatus;
+    const TickType_t xTicksToWait = 100 / portTICK_PERIOD_MS;
+
+    do {
+        if (uxQueueMessagesWaiting(xQueueSensors) != 0) {
+            vPrintString("Queue should have been empty!\r\n");
+        }
+        xStatus = xQueueReceive(xQueueSensors, &l_index, xTicksToWait);
+
+        if (xStatus == pdPASS) {
+            
+            xSensor * sensor = mlSensors.getSensor(l_index);
+            saver.saveSensor(sensor);
+
+        } else {
+            vPrintString("Could not receive from the queue.\r\n");
+        }
+        taskYIELD();
+    } while (1);
     
 }
- */
+
 byte mac[] = {
     0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED
 };
@@ -199,8 +218,8 @@ void setup(void) {
         /* Create the first task at priority 1.  This time the task parameter is
         not used and is set to NULL.  The task handle is also not used so likewise
         is also set to NULL. */
-        //        xTaskCreate(vTaskMicroLanReader, "MicroLan", 200, NULL, 1, NULL);
-        //        xTaskCreate(vTaskDataSaver, "DataSaver", 200, NULL, 1, NULL);
+        xTaskCreate(vTaskMicroLanReader, "MicroLan", 200, NULL, 1, NULL);
+        xTaskCreate(vTaskDataSaver, "DataSaver", 200, NULL, 1, NULL);
         /* The task is created at priority 1 ^. */
         xTaskCreate(vTaskDateTimeSync, "DateTime", 200, NULL, 1, xTaskHandleDateTimeSync);
 
