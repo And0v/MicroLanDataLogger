@@ -1,16 +1,50 @@
 #include <Arduino.h>
 #include <FreeRTOS_AVR.h>
-#include <DS2480B.h>
-#include "sensors.h"
+//#include <DS2480B.h>
+//#include "sensors.h"
+#include "RTClib.h"
+#include "UdpNtpClient.h"
 
-    QueueHandle_t xQueueSensors;
+QueueHandle_t xQueueSensors;
 
+TaskHandle_t xTaskHandleDateTimeSync;
 
-static void vTaskMicroLanReader(void *pvParameters );
-static void vTaskDataSaver(void *pvParameters );
+//static void vTaskMicroLanReader(void *pvParameters );
+//static void vTaskDataSaver(void *pvParameters );
+static void vTaskDateTimeSync(void *pvParameters);
 
 DS2480B ds(&Serial1);
+RTC_DS1307 rtc;
+UdpNtpClient ntpClient;
+const char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
+static void vTaskDateTimeSync(void *pvParameters) {
+    if (!rtc.begin()) {
+        Serial.println("Couldn't find RTC");
+        while (1);
+    }
+
+    do {
+
+        unsigned long time = ntpClient.sync();
+
+        if (!rtc.isrunning()) {
+            Serial.println("RTC is NOT running!");
+            rtc.adjust(DateTime(time));
+        } else {
+            Serial.println("RTC is running!");
+        }
+
+        DateTime now = rtc.now();
+        if (now != time){
+            rtc.adjust(DateTime(time));
+        }
+
+        vTaskSuspend( xTaskHandleDateTimeSync );
+        
+    } while (1);
+
+}
 
 static void vTaskMicroLanReader(void *pvParameters ) {
 
@@ -115,9 +149,7 @@ static void vTaskMicroLanReader(void *pvParameters ) {
         xStatus = xQueueSendToBack(xQueueSensors, &sensor_index, xTicksToWait);
 
         if (xStatus != pdPASS) {
-            /* We could not write to the queue because it was full - this must
-            be an error as the receiving task should make space in the queue
-            as soon as both sending tasks are in the Blocked state. */
+
             Serial.print("Could not send to the queue.\r\n");
         }
 
@@ -125,7 +157,7 @@ static void vTaskMicroLanReader(void *pvParameters ) {
     } while (1);
 
 }
-
+/*
 static void vTaskDataSaver(void *pvParameters ){
     
     float celsius = 0.0;
@@ -136,14 +168,29 @@ static void vTaskDataSaver(void *pvParameters ){
     
     
 }
-
+ */
+byte mac[] = {
+    0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED
+};
+IPAddress ip(192, 168, 5, 177);
 
 void setup(void) {
     // Insure malloc works in tasks
     __malloc_heap_end = (char*) RAMEND;
-    Serial.begin(9600);
-    Serial1.begin(9600);
-    ds.begin();
+    while (!Serial);
+
+    Serial.begin(57600);
+    Serial.println("Starting...");
+
+    Ethernet.begin(mac, ip);
+    //     Serial.println("Failed to configure Ethernet using DHCP");
+    //    // no point in carrying on, so do nothing forevermore:
+    //    for (;;)
+    //      ;}
+    ntpClient.begin();
+
+    //    Serial1.begin(9600);
+    //    ds.begin();
 
     xQueueSensors = xQueueCreate(5, sizeof ( int8_t));
 
@@ -152,9 +199,10 @@ void setup(void) {
         /* Create the first task at priority 1.  This time the task parameter is
         not used and is set to NULL.  The task handle is also not used so likewise
         is also set to NULL. */
-        xTaskCreate(vTaskMicroLanReader, "MicroLan", 200, NULL, 1, NULL);
-        xTaskCreate(vTaskDataSaver, "DataSaver", 200, NULL, 1, NULL);
+        //        xTaskCreate(vTaskMicroLanReader, "MicroLan", 200, NULL, 1, NULL);
+        //        xTaskCreate(vTaskDataSaver, "DataSaver", 200, NULL, 1, NULL);
         /* The task is created at priority 1 ^. */
+        xTaskCreate(vTaskDateTimeSync, "DateTime", 200, NULL, 1, xTaskHandleDateTimeSync);
 
         /* Start the scheduler so our tasks start executing. */
         vTaskStartScheduler();
@@ -165,4 +213,8 @@ void setup(void) {
 }
 
 void loop() {
+    //    digitalWrite(13, HIGH); // set the LED on
+    //    delay(1000); // wait for a second
+    //    digitalWrite(13, LOW); // set the LED off
+    //    delay(1000);  
 }

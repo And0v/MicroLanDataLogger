@@ -27,6 +27,7 @@ public:
     virtual ~DataSaver();
     void initSD();
     void saveSensor(xSensor * sensor);
+    long getNow();
 };
 
 #endif /* DATASAVER_H */

@@ -5,7 +5,7 @@
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>DataLogger</name>
             <c-extensions/>
-            <cpp-extensions>cpp</cpp-extensions>
+            <cpp-extensions>cpp,ino</cpp-extensions>
             <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects>
@@ -15,6 +15,7 @@
             </make-dep-projects>
             <sourceRootList>
                 <sourceRootElem>/media/Programs/arduino-1.6.11/libraries/DS2480B-master</sourceRootElem>
+                <sourceRootElem>/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

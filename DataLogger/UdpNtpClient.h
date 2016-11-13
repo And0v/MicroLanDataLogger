@@ -18,20 +18,22 @@
 #include <Ethernet.h>
 #include <EthernetUdp.h>
 
+const char TimeServer[] = "ntp.time.in.ua"; // time.nist.gov NTP server
+
 class UdpNtpClient {
-    const unsigned int LOCAL_PORT = 8888; // local port to listen for UDP packets
-    const char TimeServer[] = "time.nist.gov"; // time.nist.gov NTP server
-    const int NTP_PACKET_SIZE = 48; // NTP time stamp is in the first 48 bytes of the message
+    static const unsigned int LOCAL_PORT = 8888; // local port to listen for UDP packets
+    static const int NTP_PACKET_SIZE = 48; // NTP time stamp is in the first 48 bytes of the message
     byte _packetBuffer[ NTP_PACKET_SIZE]; //buffer to hold incoming and outgoing packets
     // A UDP instance to let us send and receive packets over UDP
     EthernetUDP _udp;
 public:
     UdpNtpClient();
+    void begin();
     virtual ~UdpNtpClient();
-    
+
     unsigned long sync();
 private:
-    sendNTPpacket(char* timeServer); // send an NTP packet to a time server
+    void sendNTPpacket(char* timeServer); // send an NTP packet to a time server
 
 };
 

@@ -11,8 +11,10 @@
             <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.h</file>
             <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.h</file>
             <file>file:/media/Programs/arduino-1.6.11/libraries/DS2480B-master/DS2480B.h</file>
+            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.h</file>
             <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp</file>
             <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/sensors.cpp</file>
+            <file>file:/media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/UdpNtpClient.cpp</file>
         </group>
     </open-files>
 </project-private>

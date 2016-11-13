@@ -22,7 +22,7 @@ int MicroLanSensors::indexOf(byte * addr) {
         }
         ++idx;
     }
-    if (idx >= SENSORS_COUNT){
+    if (idx >= SENSORS_COUNT) {
         idx = -1;
     }
     return idx;
@@ -30,7 +30,7 @@ int MicroLanSensors::indexOf(byte * addr) {
 
 int MicroLanSensors::setData(byte * addr, int16_t data) {
     int idx = indexOf(addr);
-    if (idx >= 0){
+    if (idx >= 0) {
         _sensors[idx].value = data;
     }
     return idx;
@@ -39,15 +39,16 @@ int MicroLanSensors::setData(byte * addr, int16_t data) {
 xSensor * MicroLanSensors::getSensor(byte * addr) {
     xSensor * rst = NULL;
     int idx = indexOf(addr);
-    if (idx >= 0){
+    if (idx >= 0) {
         rst = &_sensors[idx];
     }
     return rst;
 }
+
 xSensor * MicroLanSensors::getSensor(int idx) {
     xSensor * rst = NULL;
-    
-    if ((idx >= 0)&&(idx < SENSORS_COUNT)){
+
+    if ((idx >= 0)&&(idx < SENSORS_COUNT)) {
         rst = &_sensors[idx];
     }
     return rst;

@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/630fbc91/DataLogger.o \
 	${OBJECTDIR}/_ext/630fbc91/DataSaver.o \
 	${OBJECTDIR}/_ext/630fbc91/UdpNtpClient.o \
 	${OBJECTDIR}/_ext/630fbc91/sensors.o \
@@ -64,6 +65,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/datalogger: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/datalogger ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/_ext/630fbc91/DataLogger.o: /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataLogger.ino 
+	${MKDIR} -p ${OBJECTDIR}/_ext/630fbc91
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/630fbc91/DataLogger.o /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataLogger.ino
 
 ${OBJECTDIR}/_ext/630fbc91/DataSaver.o: /media/Programs/NetBeansProjects/MicroLanDataLogger/DataLogger/DataSaver.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/630fbc91

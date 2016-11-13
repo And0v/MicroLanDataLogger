@@ -5,6 +5,7 @@
 #include "DataSaver.h"
 #include "DS2480B.h"
 #include "sensors.h"
+//#include "DateTime.h"
 
 DataSaver::DataSaver() {
 }
@@ -47,9 +48,12 @@ void DataSaver::saveSensor(xSensor * sensor) {
     if (dataFile.curPosition() == 0) {
         dataFile.write("DateTime;Value");
     }
-
-
-
+    dataFile.write(getNow());
+    dataFile.write(";");
+    dataFile.write((float)sensor->value/16.0);
 }
 
+long DataSaver::getNow() {
+    return rtc.now();
+}
 
